@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Oswald", Helvetica, ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  min-height: 100vh;
+}
+
+/* Coluna esquerda */
+.sidebar {
+  background: #ffffff;
+  color: #000000;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: sticky;
+  top: 0;
+  margin-bottom: 30px;
+}
+
+.sidebar .profile {
+  text-align: center;
+  width: 100%;
+}
+
+.sidebar img {
+		width: 7cm;
+		height: 7cm;
+		border-radius: 50%;
+		margin-bottom: 15px;
+		object-fit: cover; /* mantém proporção e preenche o espaço */
+} 
+.sidebar h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.about {
+  margin-top: 30px
+}
+
+.about h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.sidebar h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #a9a9a9;
+}
+
+
+.about p {
+  font-size: 0.9rem;
+  color: #000000;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 50px;
+}
+
+/* Coluna direita */
+.content {
+  padding-right: 30px;
+  padding-left: 30px;
+  background: #fff;
+  margin-top: 40px;
+}
+
+.content h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
+  padding-bottom: 5px;
+  text-align: left;
+}
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.content p {
+  font-size: 0.9rem;
+  color: #000000;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.content ul {
+  font-size: 0.9rem;
+  color: #000000;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content img {
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+}
+
+.post {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.post h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.post a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    align-items: center;
+    text-align: center;
+  }
+}
+

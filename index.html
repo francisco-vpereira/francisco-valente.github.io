@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francisco Valente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+
+
+    <!-- Coluna Esquerda -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="foto.png" alt="Foto do Desenvolvedor">
+        <h1>Francisco Valente</h1>
+		<h4>
+		Data Analyst / Scientist <br> 
+		Porto, Portugal <br>
+	</h4>
+
+      </div>
+      <div class="about">
+        <p>
+		<b>A little bit about me: </b> <br>
+		Like many other students in the STEM field, completing my academic journey has provided me with a solid foundation in programming and mathematical tools. <br><br>
+
+		However, the pursuit of academic education has offered me more than technical knowledge. Earning a degree in Physics has been a humbling experience, one that has challenged me both intellectuall and mentally. Throughout this path, I strengthened qualities I had already recognized during my school years, such as being highly organized and methodical. Yet, successfully achieving such a significant milestone required more: attention to detail, resilience, perseverance, and hard work — traits that will support and guide me in my professional journey. <br> <br>
+
+		I consider myself a socially and environmentally conscious person, which led me during my bachelor's studies to develop a strong interest in subjects such as environmental, agricultural, and economic sustainability, precision farming, energy grids, demand and efficiency, green technology, and climate sciences. With these interests in mind, I saw one of the most pragmatic paths after completing my Physics degree as pursuing a more eclectic master’s program that would later allow me to explore these topics in greater depth. Consequently, I chose to pursue a master’s degree in Computational Statistics and Data Analysis, which enabled me to enter the challenging realm of statistics and acquire both theoretical and practical knowledge in machine learning - an area I believe holds great potential to be combined with my fields of interest. Given the nature of the program, I also developed strong teamwork skills through paired coursework and hands-on projects.<br> <br>
+
+		If you would like to get in touch, you can reach me via <a href="https://www.linkedin.com/in/francisco-valente-pereira/"><b>LinkedIn</b></a> or by email at <b>famvpereira@protonmail.com</b>.<br>If you are interested, you can also consult my personal blog at <a href="franciscovalente.pt"><b>franciscovalente.pt</b></a>.
+
+        </p>
+      </div>
+    </aside>
+
+
+
+
+    <!-- Coluna Direita -->
+    <main class="content">
+
+		<h1>Education</h1>
+		
+		<p style="font-size:1rem; margin-bottom: 10px;"><b>Bachelor's Degree in <i>Physics</i> @University of Porto <br> Sept.2017 - Jan.2022</b></p>
+
+		<p>During this degree, I have develop a solid foundation in various subjects ranging from real analysis, linear algebra, and both classical and modern physics to programming and experimental laboratory work. In many of these courses, Python was extensively used, particularly alongside libraries such as Pandas, NumPy, Matplotlib, SciPy, and Plotly.</p> 
+
+		<p>You can check the course page <a href="https://sigarra.up.pt/fcup/pt/cur_geral.cur_view?pv_ano_lectivo=2025&pv_origem=CUR&pv_tipo_cur_sigla=L&pv_curso_id=888">here</a>.</p> <br>
+		
+
+
+		<p style="font-size:1rem; margin-bottom: 10px;"><b>Master's Degree in <i>Computational Statistics and Data Analysis</i> @University of Porto <br> Sept.2022 - Jul.2024</b></p>
+		
+		<p>During this two-year program, I had the opportunity to delve deeper into topics such as simple and multiple linear regression, logistic regression, stochastic processes, computational statistics, and both supervised and unsupervised learning methods, using both R and Python. In the second year, I completed a six-month curricular internship at the Portuguese start-up FORCERA, where I developed a Python program to detect anomalies in Portuguese public contracts.</p>
+
+		<p>You can check the course page <a href="https://sigarra.up.pt/fcup/pt/cur_geral.cur_view?pv_ano_lectivo=2025&pv_origem=CUR&pv_tipo_cur_sigla=M&pv_curso_id=23821">here</a>.</p>	
+
+
+		<h1>Professional Experience</h1>
+
+		<p style="font-size: 1rem; margin-bottom: 10px;"><b>Data Analyst Curricular Intership @FORCERA &emsp;  &emsp; <br>Oct.2023 - Apr.2024 </b> </p>
+		<p>During this internship, I developed and implemented an automated system for applying red flags—indicators defined by the <a href="https://www.open-contracting.org/">Open Contracting Partnership</a> — in accordance with the legislation of the Portuguese Public Contracts Code, with the purpose of identifying potential irregularities in public procurement contracts. Based on the Open Contracting Partnership guidelines, nine binary red flags were selected and adapted to the Portuguese context. For each of these red flags, a PostgreSQL query was created to detect and flag contracts.
+		
+		The database, updated daily with new contracts published on <a href="https://www.base.gov.pt/base4">Portal Base</a> - the official government platform for public procurement -, served as the system’s data source. A Python script, built using the <i>psycopg2</i> library, connected to the database and executed the queries through dedicated functions. The resulting contracts triggered by at least one red flag were then copied into a new database table for further analysis.
+
+		<br><br>
+
+		This entire process was automated by containerizing the Python scripts using Docker and deploying them on Amazon Web Services, ensuring daily monitoring of new contract entries into the PostgreSQL database. From the research conducted, it was concluded that the system was effective in identifying and flagging public contracts that did not fully comply with the criteria defined by the Public Contracts Code, thereby serving as a valuable tool for the management and supervision of public procurement.
+
+		<br><br>
+
+		This project was developed as part of my master's dissertation, which is available for consultation <a href="https://repositorio-aberto.up.pt/handle/10216/161651">here.</a>
+
+		<br><br>
+
+		<b>Tools Used:</b> Python w/ Numpy, Matplotlib, Pandas, Psycopg2, PostgreSQL, GitHub, Docker, AWS Lambda Function, AWS ECR 
+		</p>
+
+		<!--<img src="processo_tese.png" alt="Processo da Tese">-->
+		<br>
+		
+		<p style="font-size: 1rem; margin-bottom: 10px;"><b>Data Analyst @Creative Toys Portugal<br> Dec.2024 - Jul.2025 </b> </p>
+		
+		<p> Creative Toys is a Portuguese company that commercializes toys and games, with trading card games as one of its main products. As part of the Financial Department, my key responsabilites included: </p>
+		<ul>
+				<li>Transforming quarterly profitability analyses of products and clientes - traditionally performed in Excel - into fully automated Python scripts, significantly improving efficiency, reliability and speed.</li>
+				<li>Creating automated reporting pipelines by extracting data through SQL queries from a large database and applying subsequent transformations in Python.</li>
+				<li> Developing interactive PowerBI dashboards to monitor financial KPIs, analyse sales performance, and support the preparation of budgets and financial reports.</li>
+				<li>Collaborating with sales and logistic teams to forecast revenue and optimize order supply.</li>
+		</ul>
+		<p><b>Tools Used:</b> Python w/ <i>Numpy, Pandas</i> and <i>Psycopg2</i>, Microsoft SQL Server, Microsoft Excel, PowerBI, Cegid Primavera ERP, CRM Salesforce</p> 
+
+		<br>
+		<!--<h1>Articles</h1>
+				<article class="post">
+				<h3>Article Title</h3>
+				<p>Resumo do artigo ou projeto desenvolvido. <a href="#">Ler mais</a></p>
+				</article> -->
+
+   </main> 
+  </div>
+
+</body>
+</html>
+
