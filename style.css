@@ -225,3 +225,37 @@ body {
     font-size: 1.1rem;
   }
 }
+
+
+.language-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.language-switch a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px;
+}
+
+.language-switch a.active {
+    color: #000;
+    border-bottom: 2px solid #333;
+}
+
+.language-switch a:hover {
+    color: #007bff;
+}
+
+/* Ajuste para mobile se necessário */
+@media (max-width: 768px) {
+    .language-switch {
+        top: 10px;
+        right: 10px;
+        font-size: 0.9rem;
+    }
+}
