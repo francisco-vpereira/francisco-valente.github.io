@@ -74,7 +74,7 @@
 
 		<p>You can check the course page <a href="https://sigarra.up.pt/fcup/pt/cur_geral.cur_view?pv_ano_lectivo=2025&pv_origem=CUR&pv_tipo_cur_sigla=M&pv_curso_id=23821">here</a>.</p>	
 
-		<p style="font-size:1rem; margin-bottom: 10px;"><b>Bachelor's Degree in <i>Physics</i> @University of Porto <br> Sept.2017 - Jan.2022</b></p>
+		<p style="font-size:1rem; margin-bottom: 10px; margin-top: 10px;"><b>Bachelor's Degree in <i>Physics</i> @University of Porto <br> Sept.2017 - Jan.2022</b></p>
 
 		<p>During this degree, I have develop a solid foundation in various subjects ranging from real analysis, linear algebra, and both classical and modern physics to programming and experimental laboratory work. In many of these courses, Python was extensively used, particularly alongside libraries such as Pandas, NumPy, Matplotlib, SciPy, and Plotly.</p> 
 
@@ -97,13 +97,22 @@
 		<br>
 
 		<p style="font-size: 1rem; margin-bottom: 10px;"><b>Data Analyst Curricular Intership @FORCERA &emsp;  &emsp; <br>Oct.2023 - Apr.2024 </b> </p>
-		<p>During this internship, I developed and implemented an automated system for applying red flags—indicators defined by the <a href="https://www.open-contracting.org/">Open Contracting Partnership</a> — in accordance with the legislation of the Portuguese Public Contracts Code, with the purpose of identifying potential irregularities in public procurement contracts. Based on the Open Contracting Partnership guidelines, nine binary red flags were selected and adapted to the Portuguese context. For each of these red flags, a PostgreSQL query was created to detect and flag contracts.
+		<p>During this internship, I developed and implemented an automated system for applying red flags defined by the <a href="https://www.open-contracting.org/">Open Contracting Partnership</a>, 
+			in accordance with the legislation of the Portuguese Public Contracts Code, with the purpose of identifying potential irregularities in public procurement contracts. Based on the Open 
+			Contracting Partnership guidelines, nine binary red flags were selected and adapted to the Portuguese context. For each of these red flags, a PostgreSQL query was created to detect 
+			and flag contracts.
 		
-		The database, updated daily with new contracts published on <a href="https://www.base.gov.pt/base4">Portal Base</a> - the official government platform for public procurement -, served as the system’s data source. A Python script, built using the <i>psycopg2</i> library, connected to the database and executed the queries through dedicated functions. The resulting contracts triggered by at least one red flag were then copied into a new database table for further analysis.
+		The database, updated daily with new contracts published on <a href="https://www.base.gov.pt/base4">Portal Base</a> - 
+		the official government platform for public procurement -, served as the system’s data source. A Python script, built using the <i>psycopg2</i> library, 
+		connected to the database and executed the queries through dedicated functions. The resulting contracts triggered by at least one red flag were then copied
+		into a new database table for further analysis.
 
 		<br><br>
 
-		This entire process was automated by containerizing the Python scripts using Docker and deploying them on Amazon Web Services, ensuring daily monitoring of new contract entries into the PostgreSQL database. From the research conducted, it was concluded that the system was effective in identifying and flagging public contracts that did not fully comply with the criteria defined by the Public Contracts Code, thereby serving as a valuable tool for the management and supervision of public procurement.
+		This entire process was automated by containerizing the Python scripts using Docker and deploying them on Amazon Web Services, ensuring daily monitoring of 
+		new contract entries into the PostgreSQL database. From the research conducted, it was concluded that the system was effective in identifying and flagging 
+		public contracts that did not fully comply with the criteria defined by the Public Contracts Code, thereby serving as a valuable tool for the management and 
+		supervision of public procurement.
 
 		<br><br>
 
