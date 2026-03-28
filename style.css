@@ -276,3 +276,30 @@ body {
     background-color: #e9e9e9; /* Muda para azul ao passar o rato */
     color: #fff;
 }
+
+
+.site-footer {
+    background-color: #ffffff; /* Um cinza muito escuro profissional */
+    color: #000000;
+    padding: 2rem 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1.5px solid #000000; /* Uma linha fina com a cor de destaque do teu site */
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.social-links a {
+    color: #060606;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00bfff;
+}
