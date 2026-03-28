@@ -14,12 +14,14 @@ body {
   color: #333;
   line-height: 1.6;
   background: #ffffff;
+  margin-top: 20px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 40% 60%;
   min-height: 100vh;
+  margin: 0 2rem;
 }
 
 /* Coluna esquerda */
@@ -281,7 +283,7 @@ body {
 .site-footer {
     background-color: #ffffff; /* Um cinza muito escuro profissional */
     color: #000000;
-    padding: 2rem 0;
+    padding: 1rem 0;
     margin-top: 20px;
     text-align: center;
     font-size: 0.9rem;
