@@ -264,7 +264,7 @@ body {
 .btn-download {
     display: inline-block;
     padding: 2px 2px;
-    /*background-color: #aeaeae; /* Cor escura profissional */
+    background-color: #f3f3f3; /* Cor escura profissional */
     color: #000000 !important;
     text-decoration: none;
     border-radius: 5px;
